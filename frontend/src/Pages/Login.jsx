@@ -39,7 +39,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-pink-100">
       {showPopup && <PopUp onClose={() => setShowPopup(false)}/>}
       <form className="bg-white p-6 rounded shadow-md w-full max-w-sm text-center" onSubmit={handleLogin}>
         <h1 className="text-2xl font-bold mb-4">Iniciar sesión</h1>
@@ -57,10 +57,10 @@ const Login = () => {
           placeholder="Contraseña"
           className="w-full p-2 mb-4 border border-gray-300 rounded"
         />
-        <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded">Iniciar sesión</button>
+        <button type="submit" className="w-full p-2 bg-pink-500 text-white rounded">Iniciar sesión</button>
         <p className='pt-4'>
           Si no tienes cuenta,{' '}
-          <Link to="/register" className="underline text-blue-500">
+          <Link to="/register" className="underline text-pink-500">
           regístrate
           </Link>
         </p>

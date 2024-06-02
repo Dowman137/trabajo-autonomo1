@@ -30,7 +30,7 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-pink-100">
       <form className="bg-white p-6 rounded shadow-md w-full max-w-sm text-center" onSubmit={handleRegister}>
         <h1 className="text-2xl font-bold mb-4">Crea una cuenta</h1>
         <input
@@ -54,10 +54,10 @@ const Register = () => {
           placeholder="Contraseña"
           className="w-full p-2 mb-4 border border-gray-300 rounded"
         />
-        <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded">Registrarse</button>
+        <button type="submit" className="w-full p-2 bg-pink-500 text-white rounded">Registrarse</button>
         <p className='pt-4'>
           Si ya tienes cuenta,{' '}
-          <Link to="/" className="underline text-blue-500">
+          <Link to="/" className="underline text-pink-500">
           Inicia sesión
           </Link>
         </p>
