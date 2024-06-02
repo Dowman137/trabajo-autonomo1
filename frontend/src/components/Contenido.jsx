@@ -49,7 +49,7 @@ export default function Contenido({userName}) {
 
     return (
         <main className="flex-1 p-6 overflow-y-auto">
-            <div className="max-w-lg mx-auto">
+            <div className="max-w-lg mx-auto mt-2">
                 <h2 className="text-2xl font-bold mb-4">Contenido</h2>
                 {/* Formulario para el Presupuesto */}
                 <form onSubmit={handlePresupuestoSubmit}>
@@ -67,7 +67,7 @@ export default function Contenido({userName}) {
                     </div>
                     <button
                         type="submit"
-                        className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        className="w-full p-2 bg-pink-500 text-white rounded hover:bg-pink-600"
                     >
                         Agregar Presupuesto
                     </button>
@@ -75,7 +75,7 @@ export default function Contenido({userName}) {
 
                 {/* Formulario para el Gasto */}
                 <form onSubmit={handleGastoSubmit}>
-                    <div className="mb-4">
+                    <div className="mt-4 mb-4">
                         <label htmlFor="gasto" className="block text-gray-700">Gasto:</label>
                         <input
                             type="number"
@@ -89,7 +89,7 @@ export default function Contenido({userName}) {
                     </div>
                     <button
                         type="submit"
-                        className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        className="w-full p-2 bg-pink-500 text-white rounded hover:bg-pink-600"
                     >
                         Agregar Gasto
                     </button>
@@ -100,7 +100,7 @@ export default function Contenido({userName}) {
                     <Card
                         className="mx-auto max-w-xs"
                         decoration="top"
-                        decorationColor="indigo"
+                        decorationColor="pink"
                     >
                         <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">Presupuesto</p>
                         <p className="text-3xl text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">${totalPresupuesto}</p>
@@ -109,7 +109,7 @@ export default function Contenido({userName}) {
                     <Card
                         className="mx-auto max-w-xs"
                         decoration="top"
-                        decorationColor="indigo"
+                        decorationColor="pink"
                     >
                         <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">Gastos</p>
                         <p className="text-3xl text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">${totalGastos}</p>
@@ -118,7 +118,7 @@ export default function Contenido({userName}) {
                     <Card
                         className="mx-auto max-w-xs"
                         decoration="top"
-                        decorationColor="indigo"
+                        decorationColor="pink"
                     >
                         <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">Presupuesto Restante</p>
                         <p className="text-3xl text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">${presupuestoRestante}</p>

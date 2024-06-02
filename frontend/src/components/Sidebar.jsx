@@ -4,14 +4,14 @@ export default function Sidebar({ userName, onLogout }) {
 
 
     return (
-        <aside className="bg-gray-800 text-white w-64 min-h-screen">
+        <aside className="bg-pink-800 text-white w-64 min-h-screen">
           <div className="p-4">
             {/* Título */}
             <h2 className="text-lg font-bold mb-4">Dashboard</h2>
             
             {/* Nombre del Usuario */}
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-2">
+              <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center mr-2">
                 <span className="text-white">{userName ? userName.charAt(0).toUpperCase() : ''}</span>
               </div>
               <span>{userName}</span>

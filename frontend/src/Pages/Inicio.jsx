@@ -39,6 +39,7 @@ export default function Inicio() {
           userName={userName}
         />
       </div>
+      {/* Footer**/}
     </div>
   );
 }
