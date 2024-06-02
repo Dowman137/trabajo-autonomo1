@@ -23,28 +23,31 @@ export default function Inicio() {
   };
 
   return (
-    <div className="flex">
-      {/* Sidebar */}
-      <Sidebar
-        userName={userName}
-        onLogout={handleLogout}
-      />
-
-      {/* Header y Contenido */}
-      <div className="flex-1">
-        {/* Header */}
-        <Header />
-
-        {/* Contenido Principal */}
-        <Contenido
+    <div className="flex-1">
+      <div className="flex mb-9">
+        {/* Sidebar */}
+        <Sidebar
           userName={userName}
+          onLogout={handleLogout}
         />
-      </div>
 
+        {/* Header y Contenido */}
+        <div className="flex-1">
+          {/* Header */}
+          <Header />
+
+          {/* Contenido Principal */}
+          <Contenido
+            userName={userName}
+          />
+        </div>
+
+        
+      </div>
       {/* Footer */}
       <div className="fixed bottom-0 left-0 right-0">
-        <Footer />
-      </div>
+          <Footer />
+        </div>
     </div>
   );
 }
