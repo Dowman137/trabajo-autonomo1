@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Contenido from "../components/Contenido";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { auth } from "../Firebase/config"
 
@@ -39,7 +40,11 @@ export default function Inicio() {
           userName={userName}
         />
       </div>
-      {/* Footer**/}
+
+      {/* Footer */}
+      <div className="fixed bottom-0 left-0 right-0">
+        <Footer />
+      </div>
     </div>
   );
 }
